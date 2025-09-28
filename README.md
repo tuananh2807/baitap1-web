@@ -13,25 +13,54 @@ Sử dụng Visual Studio 2022
 # Tạo Project 1 — Class Library (.NET Framework 2.0):
 Viết class chính (nhận input qua thuộc tính, sinh kết quả qua thuộc tính / trả về hàm).
 Không dùng cú pháp C# > 2.0 (ví dụ không dùng var, auto-property mới, string interpolation…).
-Build để tạo DLL (ví dụ TAPersonalToolkit.dll). <br>
+Build để tạo DLL (ví dụ TAPersonalToolkit.dll).
+
 # Tạo Project 2 — Console App (.NET Framework 2.0):
 Thêm reference tới DLL (project hoặc file .dll).
 Viết UI console: nhập tên, ngày sinh → tạo instance class từ DLL → gán input → gọi phương thức → in kết quả.
 Build và test.
+
+chuột phải vào DigitalSignatureLib chọn set as project rồi ấn start hoặc  để chạy <br> 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/496a0fd8-45e1-4169-b554-c6c796329220" />
+
+
 # ẢNH KẾT QUẢ <br>
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3c92f757-4fd3-4672-967e-21a62bb7d022" /> <br>
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3c92f757-4fd3-4672-967e-21a62bb7d022" /> 
+
 # Tạo Project 3 — Windows Forms App (.NET Framework 2.0): 
 Thêm reference tới DLL.
 Tạo form có textbox nhập, textbox ngày sinh, button, vùng hiển thị (multiline textbox).
 Khi nhấn button: lấy input, gọi DLL, hiển thị Result.
 Build và test.
+
+# dùng code để xây dựng giao diện 
+MainForm.cs <br> 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/35815005-a0c2-42d8-ab7c-6ea57af50de5" />
+
+chuột phải vào DigitalSignatureWinForm chọn set as project rồi ấn start hoặc F5 để chạy <br> 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fef3d672-af87-4bbf-910b-389142427391" />
+
+
 # ẢNH KẾT QUẢ <br>
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/44549546-b5a0-4bad-9d96-db71242f6ed9" /> <br>
+
 # Tạo Project 4 — Web (ASP.NET Web Forms, .NET Framework 2.0): 
 Thêm TAPersonalToolkit.dll vào thư mục /bin của project (hoặc add reference).
 Tạo index.html (giao diện, HTML/CSS/JS) — JS gửi POST tới api.aspx.
 Tạo api.aspx + api.aspx.cs: lấy Request.Form, gọi DLL, trả về JSON.
 Web.config: chỉ để <compilation debug="true" /> và <customErrors mode="Off"/> (KHÔNG dùng targetFramework). <br>
+
+Viết code html, css, js cho file index.html và code-behind cho api.aspx.cs 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9bf7c3b7-70c7-4ad7-b17f-b3caa8e65349" /> <br> 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9d7377d4-3401-4fba-8001-046c92a311a3" />
+
+chuột phải vào DigitalSignatureWeb chọn set as project rồi ấn ISS Express để chạy <br> 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cf8eba62-07db-41c5-9445-ad64aa8007ac" />
+
+# ẢNH KẾT QUẢ <br>
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7588be04-8126-4ad1-880d-dddab19fa88f" />
 
 
